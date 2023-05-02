@@ -162,6 +162,7 @@ body {
     margin-right: 4rem;
     height: 20.5rem;
     width: 36rem;
+    margin-left: 20rem;
   }
   .card1__img {
     margin: 3rem 0 1rem 4rem;
@@ -192,9 +193,9 @@ body {
     margin-right: 37rem;
   }
   .gbleft {
-    position: absolute;
-    top: 37%;
-    left: 69%;
+    position: relative;
+    bottom: 5rem;
+    right: 117%;
     width: 17rem;
     height: 6.5rem;
     border-radius: 1rem;
