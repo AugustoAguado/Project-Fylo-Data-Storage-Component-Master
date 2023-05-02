@@ -1,0 +1,156 @@
+
+
+$PaleBlue: hsl(243, 100%, 93%);
+$GrayishBlue: hsl(229, 7%, 55%);
+$DarkBlue: hsl(228, 56%, 26%);
+$VeryDarkBlue: hsl(229, 57%, 11%);
+$font:'Raleway', sans-serif;
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    font-family: $font;
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card1{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: $DarkBlue;
+    width: 35rem;
+    height: 20.5rem;
+    border-radius: 1rem 10rem 1rem 1rem;
+    &__img{
+        margin: 3rem 0 2rem 4rem;
+        width: 17rem;
+    }
+    &__main{
+        margin-top: 4rem;
+        margin-left: 4rem;
+        &__documents{
+            background-image: url(../images/icon-document.svg);
+            padding: 2.1rem 2.5rem;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            border-radius: 1rem;
+            background-color: $VeryDarkBlue;
+        }
+        &__folder{
+            background-image: url(../images/icon-folder.svg);
+            padding: 2.1rem 2.5rem;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            border-radius: 1rem; 
+            background-color: $VeryDarkBlue;
+            margin: 0 1.5rem 0 1.5rem;
+        }
+        &__upload{
+            background-image: url(../images/icon-upload.svg);
+            padding: 2.1rem 2.5rem;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            border-radius: 1rem;
+            background-color: $VeryDarkBlue;
+        }
+    }
+}
+
+.card2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:2rem;
+    width: 35rem;
+    height: 18rem;
+    border-radius:1.3rem;
+    background-color: $DarkBlue;
+
+    &__text{
+        margin-top: 3rem;
+        color: $GrayishBlue;
+        font-size: 1.6rem;
+        font-weight: 700;
+        &--variant{
+            color: $PaleBlue;
+        }
+    }
+    &__bar{
+        width: 80%;
+        height: 2.1rem;
+        background-color: $VeryDarkBlue;
+        border-radius: 1rem;
+    }
+
+    &__barcolor{
+        width: 77%;
+        height: 1.5rem;
+        background-image:linear-gradient( to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+        border-radius: 1rem;
+        margin: 0.3rem 0 0 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &__circle{
+            margin-right: 0.4rem;
+            background-color: $PaleBlue;
+            width: 5%;
+            height: 70%;
+            border-radius: 4rem;
+        }
+    }
+    &__storage{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color: $PaleBlue;
+        font-weight: 700;
+        &__min{
+            margin-right:18rem;
+        }
+    }
+}
+
+.gbleft{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 3.5rem;
+    background-color:rgb(243, 243, 243);
+    width: 20rem;
+    height: 8rem;
+    border-radius: 1.5rem;
+    &__number{
+        font-size: 5rem;
+    }
+    &__text{
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $GrayishBlue;
+        margin-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width:376px){
+    html{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:300px){
+    html{
+        font-size: 45%;
+    }
+}
+@media screen and (max-width:275px){
+    html{
+        font-size: 40%;
+    }
+}
+
