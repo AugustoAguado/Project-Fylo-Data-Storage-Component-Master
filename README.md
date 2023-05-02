@@ -32,5 +32,5 @@ Users should be able to:
 
 - GitHub - [AugustoAguado](https://github.com/AugustoAguado)
 
--Linkedin -[augusto-aguado](https://www.linkedin.com/in/augusto-aguado/)
+- Linkedin -[augusto-aguado](https://www.linkedin.com/in/augusto-aguado/)
 
