@@ -3,7 +3,7 @@
 $PaleBlue: hsl(243, 100%, 93%);
 $GrayishBlue: hsl(229, 7%, 55%);
 $DarkBlue: hsl(228, 56%, 26%);
-$VeryDarkBlue: hfylo-data-storage-component-mastersl(229, 57%, 11%);
+$VeryDarkBlue:hsl(229, 57%, 11%);
 $font:'Raleway', sans-serif;
 
 body{
@@ -138,10 +138,15 @@ body{
 
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:377px){
+    html{
+        font-size: 58%;
+    }
+}
+@media screen and (max-width:351px){
     html{
         font-size: 50%;
-    }
+}
 }
 @media screen and (max-width:300px){
     html{
