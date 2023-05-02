@@ -6,6 +6,14 @@ $DarkBlue: hsl(228, 56%, 26%);
 $VeryDarkBlue:hsl(229, 57%, 11%);
 $font:'Raleway', sans-serif;
 
+@mixin icons{
+    padding: 2.1rem 2.5rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 1rem;
+    background-color: $VeryDarkBlue;
+}
+
 body{
     display: flex;
     align-items: center;
@@ -35,28 +43,16 @@ body{
         margin-left: 4rem;
         &__documents{
             background-image: url(../images/icon-document.svg);
-            padding: 2.1rem 2.5rem;
-            background-repeat: no-repeat;
-            background-position: 50%;
-            border-radius: 1rem;
-            background-color: $VeryDarkBlue;
+            @include icons;
         }
         &__folder{
             background-image: url(../images/icon-folder.svg);
-            padding: 2.1rem 2.5rem;
-            background-repeat: no-repeat;
-            background-position: 50%;
-            border-radius: 1rem; 
-            background-color: $VeryDarkBlue;
+            @include icons;
             margin: 0 1.5rem 0 1.5rem;
         }
         &__upload{
             background-image: url(../images/icon-upload.svg);
-            padding: 2.1rem 2.5rem;
-            background-repeat: no-repeat;
-            background-position: 50%;
-            border-radius: 1rem;
-            background-color: $VeryDarkBlue;
+            @include icons;
         }
     }
 }
@@ -158,4 +154,75 @@ body{
         font-size: 40%;
     }
 }
-
+@media screen and (min-width:1439px){
+    html{
+        font-size: 70%;
+    }
+    body{
+        background-image: url(../images/bg-desktop.png);
+        background-size: 100% 50%;
+        background-color: $VeryDarkBlue;
+        flex-direction: row;   
+        background-position: bottom; 
+        
+    }
+    .card1{
+        margin-right: 4rem;
+        height: 20.5rem;
+        width: 36rem;
+        &__img{
+            margin: 3rem 0 1rem 4rem;
+            width: 15rem;
+        }
+    }
+    .card2{
+        width: 54rem;
+        height: 15rem;
+        border-radius: 1rem;
+        align-items:start;
+        margin-top: 5.5rem;
+        &__text{
+            text-align: start;
+            margin-left: 3rem;
+        }
+        &__bar{
+            margin-left: 3rem;
+            width: 86%;
+        }
+        &__barcolor{
+            &__circle{
+                width: 3%;
+            }
+        }
+            
+        &__storage{
+            margin-left: 3rem;
+            &__min{
+                margin-right:37rem;
+            }
+        }
+    }
+    .gbleft{
+        position:absolute;
+        top: 37%;
+        left: 69%;
+        width: 17rem;
+        height: 6.5rem;
+        border-radius: 1rem;
+        &__number{
+            font-size: 4rem;
+        }
+        &__text{
+            font-size: 1.5rem;
+        }
+        &__peak{
+            background-color: rgb(243, 243, 243);
+            height: 4rem;
+            width: 30%;
+            position: absolute;
+            left: 70%;
+            top:85%;
+            clip-path: polygon(100% 0, 45% 0, 100% 82%);
+        }
+    }
+}

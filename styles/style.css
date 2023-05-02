@@ -146,4 +146,73 @@ body {
   html {
     font-size: 40%;
   }
+}
+@media screen and (min-width: 1439px) {
+  html {
+    font-size: 70%;
+  }
+  body {
+    background-image: url(../images/bg-desktop.png);
+    background-size: 100% 50%;
+    background-color: hsl(229, 57%, 11%);
+    flex-direction: row;
+    background-position: bottom;
+  }
+  .card1 {
+    margin-right: 4rem;
+    height: 20.5rem;
+    width: 36rem;
+  }
+  .card1__img {
+    margin: 3rem 0 1rem 4rem;
+    width: 15rem;
+  }
+  .card2 {
+    width: 54rem;
+    height: 15rem;
+    border-radius: 1rem;
+    align-items: start;
+    margin-top: 5.5rem;
+  }
+  .card2__text {
+    text-align: start;
+    margin-left: 3rem;
+  }
+  .card2__bar {
+    margin-left: 3rem;
+    width: 86%;
+  }
+  .card2__barcolor__circle {
+    width: 3%;
+  }
+  .card2__storage {
+    margin-left: 3rem;
+  }
+  .card2__storage__min {
+    margin-right: 37rem;
+  }
+  .gbleft {
+    position: absolute;
+    top: 37%;
+    left: 69%;
+    width: 17rem;
+    height: 6.5rem;
+    border-radius: 1rem;
+  }
+  .gbleft__number {
+    font-size: 4rem;
+  }
+  .gbleft__text {
+    font-size: 1.5rem;
+  }
+  .gbleft__peak {
+    background-color: rgb(243, 243, 243);
+    height: 4rem;
+    width: 30%;
+    position: absolute;
+    left: 70%;
+    top: 85%;
+    -webkit-clip-path: polygon(100% 0, 45% 0, 100% 82%);
+            clip-path: polygon(100% 0, 45% 0, 100% 82%);
+  }
 }/*# sourceMappingURL=style.css.map */
